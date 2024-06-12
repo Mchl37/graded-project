@@ -1,0 +1,33 @@
+{
+  "name": "cra_xx",
+  "version": "0.0.0",
+  "dependencies": {
+    "@testing-library/react": "12.1.2",
+    "jsdom": "^24.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "scripts": {
+    "test:unit": "vitest"
+  },
+  "eslintConfig": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.3.2",
+    "@rsbuild/plugin-react": "^0.3.2",
+    "@rspack/core": "^0.5.0",
+    "@testing-library/jest-dom": "^6.4.6",
+    "vitest": "^1.6.0"
+  }
+}
