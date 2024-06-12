@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { fetchPosts } from '../api';
 import Title from './Title';
+import FileUpload from '../FileUpload';
 
 const RemoteButton = React.lazy(() => import('remote/Button'));
 const SharedHeader = React.lazy(() => import('shared/Header'));
@@ -12,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await fetchPosts(); // Utilisation de la fonction fetchPosts
+        const result = await fetchPosts();
         setPosts(result.data);
       } catch (error) {
         console.error('Error fetching posts:', error);
@@ -28,6 +29,7 @@ const App = () => {
         <SharedHeader />
       </Suspense>
       <Title text="Host" />
+      <FileUpload />
       <Suspense fallback="Loading Button">
         <RemoteButton />
       </Suspense>

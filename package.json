@@ -217,5 +217,8 @@
     "report:generate": "allure generate ./cypress/results/allure-results --clean -o ./cypress/report",
     "report:open": "allure open ./cypress/report",
     "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "firebase": "^10.12.2"
   }
 }
